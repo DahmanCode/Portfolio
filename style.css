@@ -57,13 +57,28 @@ header {
 
 .navbar .hamburger {
   /* border: 1px solid; */
-  margin-top: 25px;
+  margin-top: 10px;
   cursor: pointer;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translate(-50%);
   z-index: 100;
+}
+
+.navbar .hamburger::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 50%;
+  transform: translateX(50%);
+  /* width: 130%; */
+  /* height: 60px; */
+  /* background-color: var(--mute-color); */
+  border-top: 60px solid var(--mute-color);
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid var(--mute-color);
+  border-right: 15px solid var(--mute-color);
 }
 
 .hamburger div {
@@ -73,7 +88,7 @@ header {
 }
 
 .hamburger span {
-  background-color: #fff;
+  background-color: #000;
   width: 100%;
   height: 2px;
   border-radius: 5px;
@@ -99,20 +114,15 @@ header {
   transform-origin: 100% 0;
 }
 
-.active span {
-  background-color: var(--seconde-color);
-  
-}
-
-.active .line-1 {
+.active .hamburger .line-1 {
   transform: translate(0, 0) rotate(-45deg);
 }
 
-.active .line-3 {
+.active .hamburger .line-3 {
   transform: translate(-100%, 0) rotate(-45deg);
 }
 
-.active .line-2 {
+.active .hamburger .line-2 {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -172,7 +182,7 @@ header {
 }
 
 .nav-links {
-  position: absolute;
+  position: fixed;
   top: -100%;
   left: 0;
   width: 100%;
@@ -325,7 +335,7 @@ ul li a:hover::before {
   z-index: 2;
   /* margin-bottom: 10%; */
   line-height: 88px;
-  /* background-color: #2bfd86; */
+  /* background-color: var(--first-color); */
 }
 
 .sub-heading h1 {
@@ -384,7 +394,7 @@ ul li a:hover::before {
   width: 1px;
   height: 150px;
   margin: 0px auto;
-  background-color: #2bfd86;
+  background-color: var(--first-color);
   margin-top: 10px;
 }
 
@@ -401,7 +411,7 @@ ul li a:hover::before {
 .icons .icon path {
   fill: transparent;
   stroke-width: 15;
-  stroke: #2bfd86;
+  stroke: var(--first-color);
 }
 
 .icons .icon.twitter path {
@@ -425,7 +435,7 @@ ul li a:hover::before {
   }    
   100% {
     stroke-dashoffset: 3120;
-    fill: #2bfd86;
+    fill: var(--first-color);
   }    
 }
 
@@ -450,7 +460,7 @@ ul li a:hover::before {
   }    
   100% {
     stroke-dashoffset: 3620;
-    fill: #2bfd86;
+    fill: var(--first-color);
   }    
 }
 .icons .icon.codepen path {
@@ -475,7 +485,7 @@ ul li a:hover::before {
   }    
   100% {
     stroke-dashoffset: 4020;
-    fill: #2bfd86;
+    fill: var(--first-color);
   }    
 }
 .icons .icon.github path {
@@ -501,7 +511,7 @@ ul li a:hover::before {
   }    
   100% {
     stroke-dashoffset: 4410;
-    fill: #2bfd86;
+    fill: var(--first-color);
   }    
 }
 
