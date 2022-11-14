@@ -48,7 +48,7 @@ header {
 }
 
 .navbar.active .logo {
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 50%;
   transform: translate(-50%);
@@ -192,23 +192,12 @@ header {
   justify-content: center;
   background: url(./image/download.png) var(--background-color);
   /* display: none; */
-  animation: down 1s ease;
   transition: 1s;
   z-index: 10;
 }
 
 .navbar.active .nav-links{
   top: 0;
-}
-
-@keyframes down {
-  from {
-    transform: translateY(-50%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
 }
 
 ul {
@@ -219,7 +208,6 @@ ul {
 
 ul li {
   list-style: none;
-  margin-left: 60px;
 }
 
 ul li::before {
@@ -246,8 +234,6 @@ ul li:hover::before {
 ul li a {
   position: relative;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   padding: 10px 35px;
   margin: 2px;
   text-decoration: none;
@@ -538,5 +524,20 @@ ul li a:hover::before {
   .slide .row {
     padding: 4px 0;
     font-size: 16px;
+  }
+
+  ul li::before {
+    font-size: 8rem;
+  }
+
+  ul li a {
+    padding: 6px 16px;
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  .icons {
+    width: 22px;
+    left: 93%;
   }
 }
