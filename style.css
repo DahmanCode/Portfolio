@@ -595,16 +595,16 @@ header .content .left {
   }
 
   .sub-heading {
-    margin-left: 2rem;
-    line-height: 58px;
+    margin-left: .5rem;
+    line-height: 45px;
   }
 
   .sub-heading h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   
   .sub-heading h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .sub-heading p {
