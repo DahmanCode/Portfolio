@@ -56,7 +56,6 @@ header {
 }
 
 .navbar .hamburger {
-  /* border: 1px solid; */
   margin-top: 10px;
   cursor: pointer;
   z-index: 10;
@@ -619,3 +618,4 @@ header .content .left {
     width: 12rem;
   }
 }
+
