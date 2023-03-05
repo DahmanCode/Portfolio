@@ -352,11 +352,6 @@ header .content .right {
   width: 16vw;
 }
 
-header .content .left {
-  position: absolute;
-  bottom: -80px;
-}
-
 /* ===== ICONS STYLE ===== */
 
 .icons {
@@ -493,7 +488,89 @@ header .content .left {
   }    
 }
 
+/* Text Animation */
+
+.animation1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.animation1 .scroll {
+  width: 100%;
+  display: flex;
+  background-color: #f0f0f0;
+  background-image: url(image/background.jpg);
+}
+
+.animation1 .scroll div {
+  font-size: 7rem;
+  white-space: nowrap;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation-delay: -60s;
+}
+
+.animation1 .text1 div {
+  animation: animate1 60s linear infinite;
+}
+
+.animation1 .text2 div {
+  animation: animate1 60s linear infinite reverse;
+}
+
+.animation1 .text1 div:nth-child(2) {
+  animation: animate2 60s linear infinite;
+  animation-delay: -30s;
+}
+
+.animation1 .text2 div:nth-child(2) {
+  animation: animate2 60s linear infinite reverse;
+  animation-delay: -30s;
+}
+
+.animation1 .text1 {
+  color: var(--mute-color);
+}
+
+.animation1 .text2 {
+  -webkit-text-stroke: 2px var(--mute-color);
+  color: transparent;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%); 
+  }
+}
+
+/* About */
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00385e;
+  background-image: url(image/download.png);
+  
+}
+
 /* ========== */
+
+
+
 
 /* Media Quiry */
 
@@ -570,12 +647,6 @@ header .content .left {
     bottom: 30%;
     right: -2%;
     width: 28vw;
-  }
-
-  header .content .left {
-    bottom: -80px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
