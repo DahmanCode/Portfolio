@@ -25,7 +25,7 @@ body {
 
 header {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   background: url(/image/download.png) var(--background-color);
   color: #fff;
@@ -276,7 +276,13 @@ ul li a:hover::before {
   transition-delay: .2s;
 }
 
-.content{
+.home {
+  position: relative;
+  /* height: 100vh; */
+  width: 100vw;
+}
+
+.home .content{
   width: 100%;
   height: calc(100vh - 160px);
   display: flex;
@@ -284,7 +290,7 @@ ul li a:hover::before {
   justify-content: center;
 }
 
-.heading {
+.home .heading {
   position: absolute;
   display: inline-block;
   top: 10%;
@@ -293,8 +299,8 @@ ul li a:hover::before {
   z-index: 1;
 }
 
-.heading h1, 
-.heading h1 span{
+.home .heading h1, 
+.home .heading h1 span{
   /* margin-top: 30px; */
   font-size: 180px;
   color: #8b8b8b;
@@ -309,7 +315,7 @@ ul li a:hover::before {
   color: #7b7b7b;
 }
 
-.sub-heading {
+.home .sub-heading {
   width: 60%;
   height: 100%;
   display: flex;
@@ -345,7 +351,7 @@ ul li a:hover::before {
   line-height: 38px;
 }
 
-header .content .right {
+.home .right {
   position: absolute;
   bottom: 20%;
   right: 5%;
@@ -531,11 +537,11 @@ header .content .right {
 }
 
 .animation1 .text1 {
-  color: var(--mute-color);
+  color: #2bfd86;
 }
 
 .animation1 .text2 {
-  -webkit-text-stroke: 2px var(--mute-color);
+  -webkit-text-stroke: 2px var(--background-color);
   color: transparent;
 }
 
@@ -557,14 +563,159 @@ header .content .right {
   }
 }
 
-/* About */
+@media screen and (max-width: 768px) {
+  .animation1 .scroll div {
+    font-size: 4rem;
+  }
+}
+
+/* About Section */
 
 .about {
   height: 100vh;
   width: 100vw;
   background-color: #00385e;
   background-image: url(image/download.png);
+  display: flex;
+  /* gap: 10rem; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.about .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: rem; */
+  /* align-items: center; */
+  width: 500px;
+  max-width: 500%;
+  margin: 6rem;
+}
+
+.about-content h1 {
+  font-size: 4rem;
+  font-family: 'Aboreto', cursive;
+  color: #dfe5fa;
+  margin-bottom: 2rem;
+}
+
+.about-content p {
+  font-size: 1.3rem;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  color: #8892b0;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  padding-bottom: 1.5rem;
+}
+
+.about-content div {
+  display: flex;
+  gap: 4rem;
+  margin-left: 15px;
+}
+
+.about-content ul li {
+  /* font-family: 'Aboreto', cursive; */
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;;
+  color: #7e93d4;
+  font-size: 1.1rem;
+  font-weight: 200;
+  position: relative;
+  padding: 4px 0;
+}
+
+.about-content ul li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  border-top: 3px solid transparent;
+  /* border-right: 6px solid transparent; */
+  border-bottom: 3px solid transparent;
+  border-left: 6px solid var(--mute-color);
+}
+
+.about .about-image {
+  position: relative;
+  /* background-color: #7e93d4; */
+  margin-left: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 40%; */
+  /* border-radius: 50%; */
+  border-right: 10rem solid transparent;
+  border-bottom: 20rem solid #7e93d4;
+  border-left: 10rem solid transparent;
+  filter: drop-shadow(0 6px 20px #64ffda80);
+  transition: all .5s;
+}
+
+.about-image:hover {
+  border-right: 10rem solid transparent;
+  border-bottom: 23rem solid #7e93d4;
+  border-left: 10rem solid transparent;
+}
+
+.about-image img {
+  position: absolute;
+  bottom: -20rem;
+  width: 20rem;
+  animation: move 4s ease-in-out infinite;
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+
+@media screen and (max-width: 968px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about .about-content {
+    margin-top: 0;
+    width: 400px;
+  }
+
+  .about-content h1 {
+    font-size: 3rem;
+  }
   
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-content ul li {
+    font-size: 1rem;
+  }
+  
+  .about .about-image {
+    margin-left: 0;
+    border-right: 8rem solid transparent;
+    border-bottom: 16rem solid #7e93d4;
+    border-left: 8rem solid transparent;
+  }
+
+  .about-image:hover {
+    border-right: 9rem solid transparent;
+    border-bottom: 16rem solid #7e93d4;
+    border-left: 9rem solid transparent;
+  }
+
+  .about-image img {
+    bottom: -16rem;
+    width: 15rem;
+  }
 }
 
 /* ========== */
@@ -574,7 +725,7 @@ header .content .right {
 
 /* Media Quiry */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   .navbar .logo {
     left: 1%;
     width: 150px;
@@ -610,79 +761,79 @@ header .content .right {
     left: 93%;
   }
   
-  .heading {
+  .home .heading {
     top: 10%;
     left: 5%;
   }
   
-  .heading h1, 
-  .heading h1 span{
+  .home .heading h1, 
+  .home .heading h1 span{
     font-size: 5rem;
   }
 
-  .content{
+  .home .content{
     justify-content: flex-start;
   }
 
-  .sub-heading {
+  .home .sub-heading {
     line-height: 68px;
     margin-left: 6rem;
   }
 
-  .sub-heading h2 {
-    font-size: 50px;
+  .home .sub-heading h2 {
+    font-size: 3rem;
   }
   
-  .sub-heading h3 {
-    font-size: 40px;
+  .home .sub-heading h3 {
+    font-size: 2rem;
   }
 
-  .sub-heading p {
-    font-size: 18px;
+  .home .sub-heading p {
+    font-size: 1rem;
     width: 100%;
     line-height: 30px;
   }
 
-  header .content .right {
+  .home .content .right {
     bottom: 30%;
     right: -2%;
-    width: 28vw;
+    width: 26vw;
   }
 }
 
 /* =================== */
 
 @media screen and (max-width: 425px) {
-  .heading {
+  .home .heading {
     top: 15%;
     left: 1%;
   }
 
-  .heading h1, 
-  .heading h1 span{
+  .home .heading h1, 
+  .home .heading h1 span{
     font-size: 3rem;
   }
 
-  .sub-heading {
+  .home .sub-heading {
     margin-left: .5rem;
     margin-bottom: 40px;
     line-height: 45px;
   }
 
-  .sub-heading h2 {
-    font-size: 30px;
+  .home .sub-heading h2 {
+    font-size: 2.5rem;
   }
   
-  .sub-heading h3 {
-    font-size: 25px;
+  .home .sub-heading h3 {
+    font-size: 1.5rem;
   }
 
-  .sub-heading p {
-    font-size: 16px;
+  .home .sub-heading p {
+    font-size: 15px;
     width: 110%;
   }
 
-  header .content .right {
+  .home .content .right {
     bottom: 28%;
     right: -10%;
     width: 12rem;

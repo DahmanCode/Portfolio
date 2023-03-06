@@ -39,8 +39,8 @@
       <nav>
         <div class="nav-links">
           <ul>
-            <li data-text="Home"><a href="#">Home</a></li>
-            <li data-text="About"><a href="#">About</a></li>
+            <li data-text="Home"><a href="#home">Home</a></li>
+            <li data-text="About"><a href="#about">About</a></li>
             <li data-text="Services"><a href="#">Services</a></li>
             <li data-text="Projects"><a href="#">Projects</a></li>
             <li data-text="Contact"><a href="#">Contact</a></li>
@@ -48,24 +48,27 @@
         </div>
       </nav>
     </div>
-    <div class="content">
-      <div class="heading">
-        <h1>
-          quality <b style="color: var(--first-color);">+</b>
-          <span>creativity</span>
-        </h1>
+    
+    <section class="home" id="home">
+      <div class="content">
+        <div class="heading">
+          <h1>
+            quality <b style="color: var(--first-color);">+</b>
+            <span>creativity</span>
+          </h1>
+        </div>
+        <div class="sub-heading">
+          <h1>Hi, my name is</h1> 
+          <h2> Abderrahman Elaammari</h2>
+          <h3>I build things for the web.</h3>
+          <p>
+            I'am Front-end developer who cares deeply about user experience. Serious passion for UI design and new technologies.
+          </p>
+        </div>
+        <img src="image/hi.png" alt="Hi img" class="right">
+        <!-- <img src="image/set.png" alt="i'm sitting" class="left"> -->
       </div>
-      <div class="sub-heading">
-        <h1>Hi, my name is</h1> 
-        <h2> Abderrahman Elaammari</h2>
-        <h3>I build things for the web.</h3>
-        <p>
-          I'am Front-end developer who cares deeply about user experience. Serious passion for UI design and new technologies.
-        </p>
-      </div>
-      <img src="image/hi.png" alt="Hi img" class="right">
-      <!-- <img src="image/set.png" alt="i'm sitting" class="left"> -->
-    </div>
+    </section>
 
     <!-- ===== ICONS ===== -->
 
@@ -157,10 +160,30 @@
     </div>
   </div>
 
-  <section class="main">
-    <div class="about">
-      <h2>About</h2>
-    </div>
+  <section id="about" class="about">
+      <div class="about-content">
+        <h1>About</h1>
+        <p>I am a front-end web developer with over 2 years of experience. I work with people all over the world as a freelancer to create high-performance, rich, interactive websites that work across all platforms and devices.</p>
+
+        <p>Although I'm very familiar with frameworks, my websites are primarily hand-coded using HTML5, CSS3 & JavaScript.</p>
+
+          <p>Here are a few technologies I’ve been working with recently:</p>
+          <div>
+            <ul>
+              <li>JavaScript (ES6+)</li>
+              <li>jQuery</li>
+              <li>React</li>
+            </ul>
+            <ul>
+              <li>WordPress</li>
+              <li>Bootstrap</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+      </div>
+      <div class="about-image">
+        <img src="image/stady.png" alt="">
+      </div>
   </section>
 
   <script src="script.js"></script>
