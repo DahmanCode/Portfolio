@@ -25,7 +25,7 @@ body {
 
 header {
   position: relative;
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   background: url(/image/download.png) var(--background-color);
   color: #fff;
@@ -293,16 +293,16 @@ ul li a:hover::before {
 .home .heading {
   position: absolute;
   display: inline-block;
-  top: 10%;
-  left: 10%;
-  width: 3000px;
+  top: 1rem;
+  left: 8rem;
+  width: 120rem;
   z-index: 1;
 }
 
 .home .heading h1, 
 .home .heading h1 span{
   /* margin-top: 30px; */
-  font-size: 180px;
+  font-size: 10rem;
   color: #8b8b8b;
   /* line-height: 130px; */
   text-transform: capitalize;
@@ -507,7 +507,7 @@ ul li a:hover::before {
   width: 100%;
   display: flex;
   background-color: #f0f0f0;
-  background-image: url(image/background.jpg);
+  background-image: url(image/download.png);
 }
 
 .animation1 .scroll div {
@@ -589,8 +589,7 @@ ul li a:hover::before {
   justify-content: center;
   /* margin-left: rem; */
   /* align-items: center; */
-  width: 500px;
-  max-width: 500%;
+  max-width: 550px;
   margin: 6rem;
 }
 
@@ -684,7 +683,7 @@ ul li a:hover::before {
 
   .about .about-content {
     margin-top: 0;
-    width: 400px;
+    margin: 4rem 2rem;
   }
 
   .about-content h1 {
@@ -701,6 +700,7 @@ ul li a:hover::before {
   
   .about .about-image {
     margin-left: 0;
+    margin-bottom: 4rem;
     border-right: 8rem solid transparent;
     border-bottom: 16rem solid #7e93d4;
     border-left: 8rem solid transparent;
@@ -718,6 +718,11 @@ ul li a:hover::before {
   }
 }
 
+@media screen and (max-width: 425px)  {
+  .about {
+    height: 100%;
+  }
+}
 /* ========== */
 
 
@@ -758,7 +763,9 @@ ul li a:hover::before {
 
   .icons {
     width: 22px;
-    left: 93%;
+    left: calc(100vw - 3rem);
+    bottom: 0;
+    /* display: none; */
   }
   
   .home .heading {
@@ -805,7 +812,7 @@ ul li a:hover::before {
 
 @media screen and (max-width: 425px) {
   .home .heading {
-    top: 15%;
+    top: 3rem;
     left: 1%;
   }
 
@@ -815,13 +822,13 @@ ul li a:hover::before {
   }
 
   .home .sub-heading {
-    margin-left: .5rem;
+    margin-left: 2rem;
     margin-bottom: 40px;
     line-height: 45px;
   }
 
   .home .sub-heading h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .home .sub-heading h3 {
@@ -829,14 +836,14 @@ ul li a:hover::before {
   }
 
   .home .sub-heading p {
-    font-size: 15px;
-    width: 110%;
+    font-size: .9rem;
+    width: 16rem;
   }
 
   .home .content .right {
     bottom: 28%;
     right: -10%;
-    width: 12rem;
+    width: 10rem;
   }
 }
 
