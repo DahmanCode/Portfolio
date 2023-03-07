@@ -25,11 +25,14 @@ body {
 
 header {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 5.5rem;
+  border: 1px solid #fff;
   width: 100vw;
   background: url(/image/download.png) var(--background-color);
   color: #fff;
   overflow-x: hidden;
+  z-index: 999;
 }
 
 .navbar {
@@ -278,8 +281,10 @@ ul li a:hover::before {
 
 .home {
   position: relative;
-  /* height: 100vh; */
+  top: -5.5rem;
+  height: 100vh;
   width: 100vw;
+  background: url(/image/download.png) var(--background-color);
 }
 
 .home .content{
@@ -288,12 +293,13 @@ ul li a:hover::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 6rem;
 }
 
 .home .heading {
   position: absolute;
   display: inline-block;
-  top: 1rem;
+  top: 5rem;
   left: 8rem;
   width: 120rem;
   z-index: 1;
@@ -725,7 +731,39 @@ ul li a:hover::before {
 }
 /* ========== */
 
+/* Projects */
 
+/* .projects {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.project {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  scroll-snap-align: start;
+}
+
+.one {
+  background: rgb(36, 164, 138);
+}
+
+.tow {
+  background: rgb(211, 79, 79);
+}
+
+.three {
+  background: rgb(67, 91, 175);
+}
+
+.four {
+  background: lightsalmon;
+} */
 
 
 /* Media Quiry */
@@ -763,8 +801,7 @@ ul li a:hover::before {
 
   .icons {
     width: 1.2rem;
-    left: 1.2rem;
-    /* left: calc(100vw - 2rem); */
+    left: calc(100vw - 2rem);
     /* display: none; */
   }
   
