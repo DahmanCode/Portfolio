@@ -67,6 +67,12 @@
         </div>
         <img src="image/hi.png" alt="Hi img" class="right">
         <!-- <img src="image/set.png" alt="i'm sitting" class="left"> -->
+        <div class="circular-text">
+          <p id="rotated">
+            own &#8226 Scroll Down &#8226 Scroll Down &#8226 Scroll D
+          </p>
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
       </div>
     </section>
 
@@ -202,5 +208,16 @@
   </section> -->
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+  <script>
+
+    const text = document.getElementById('rotated')
+    const rotate = new CircleType(text).radius(50)
+
+    window.addEventListener('scroll', function(){
+      text.style.transform = 'rotate(' + (window.scrollY * .5) + 'deg)'
+    })
+
+  </script>
 </body>
 </html>

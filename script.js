@@ -13,3 +13,4 @@ navLinks.forEach(link => {
 });
 
 console.log(navLinks)
+

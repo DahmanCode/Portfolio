@@ -29,7 +29,7 @@ header {
   width: 100vw;
   background: url(/image/download.png) var(--background-color);
   color: #fff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .navbar {
@@ -358,6 +358,51 @@ ul li a:hover::before {
   width: 16vw;
 }
 
+.home .circular-text{
+  position: absolute;
+  bottom: 0;
+  left: 49.6%;
+}
+
+.home .circular-text #rotated {
+  position: absolute;
+  bottom: -3rem;
+  /* transform: translateX(-50%); */
+  color: rgba(255, 0, 0, 0);
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Monument Extended";
+  transition: .5s ease-out;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, .6);
+}
+
+.home .circular-text i {
+  position: absolute;
+  left: 50%;
+  top: -3.5rem;
+  transform: translate(-50%);
+  font-size: 1.8rem;
+  color: var(--mute-color);
+}
+
+@media (max-width:425px) {
+  .home .circular-text{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  .home .circular-text #rotated {
+    font-size: 1rem;
+    bottom: 0rem;
+  }
+  
+  .home .circular-text i {
+    font-size: 1.4rem;
+    top: -5rem;
+  }
+}
+
 /* ===== ICONS STYLE ===== */
 
 .icons {
@@ -516,6 +561,11 @@ ul li a:hover::before {
   font-weight: 700;
   text-transform: uppercase;
   animation-delay: -60s;
+}
+
+.animation1 .scroll:hover div,
+.animation1 .scroll:hover div:nth-child(2) {
+  animation-play-state: paused;
 }
 
 .animation1 .text1 div {
