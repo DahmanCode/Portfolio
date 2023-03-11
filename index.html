@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
   <title>Dahman Portolio</title>
 </head>
@@ -41,7 +45,6 @@
           <ul>
             <li data-text="Home"><a href="#home">Home</a></li>
             <li data-text="About"><a href="#about">About</a></li>
-            <li data-text="Services"><a href="#">Services</a></li>
             <li data-text="Projects"><a href="#">Projects</a></li>
             <li data-text="Contact"><a href="#">Contact</a></li>
           </ul>
@@ -49,7 +52,7 @@
       </nav>
     </div>
     
-    <section class="home" id="home">
+    <section class="home">
       <div class="content">
         <div class="heading">
           <h1>
@@ -192,22 +195,58 @@
       </div>
   </section>
 
-  <!-- <section class="projects">
-    <div class="project one">
-      Project One
+  <!-- PROJECTS SECTION -->
+
+  <section id="projects" class="projects">
+    
+    <div class="container-boxes">
+      <h1>some things i've built</h1>
+
+      <div class="box">
+
+        <div class="box-image">
+          <a href="https://scout.camd.northeastern.edu/">
+            <img src="image/project1.JPG" alt="">
+          </a>
+        </div>
+
+        <div class="box-info">
+
+          <div class="box-title">
+            <h4>Featured Project</h4>
+            <h2>Halcyon Theme</h2>
+          </div>
+          <div class="box-content">
+            <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+          </div>
+          <div class="box-details">
+            <div class="tools">
+              <span>Express</span>
+              <span>React</span>
+              <span>Styled Components</span>
+            </div>
+            <div class="icon">
+              <a href=""><i class='bx bxl-github'></i></a>
+              <a href=""><i class='bx bx-link' ></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-    <div class="project tow">
-      Project Tow
-    </div>
-    <div class="project three">
-      Project Three
-    </div>
-    <div class="project four">
-      Project Four
-    </div>
-  </section> -->
+    
+  </section>
+
+
+
+
+
+
 
   <script src="js/script.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
   <script>
 

@@ -1,0 +1,184 @@
+.projects {
+  height: 100%;
+  width: 100vw;
+  background: url(/image/download.png) #597894;
+  display: flex;
+  /* gap: 10rem; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding-top: 4rem; */
+}
+
+.projects .container-boxes {
+  margin: 8rem;
+  max-width: 950px;
+}
+
+.container-boxes h1 {
+  position: relative;
+  text-align: start;
+  margin-bottom: rem;
+  font-size: 2.5rem;
+  font-family: 'Aboreto', cursive;
+  color: #dfe5fa;
+  overflow: hidden;
+}
+
+.container-boxes h1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  /* right: 0; */
+  width: 50%;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #dfe5fa;
+}
+
+.container-boxes .box {
+  /* max-width: 900px; */
+  /* max-width: 1000px; */
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* border: 1px solid #f00; */
+  /* margin-top: 4rem; */
+}
+
+.box .box-image {
+  position: relative;
+  height: 80%;
+  /* position: relative; */
+  width: 60%;
+  /* max-width: 550px; */
+  /* height: auto; */
+  /* border: 1px solid #f00; */
+  /* display: flex; */
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: all .3s;
+}
+/* 
+.box-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  transition: all .3s;
+  background-color: #02172980;
+}
+
+.box-image:hover::after {
+  background-color: transparent;
+} */
+
+.box-image a {
+  width: 100%;
+  height: 100%;
+  background-color: #eb0404;
+}
+
+.box-image a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
+  z-index: 3;
+  transition: var(--transition);
+  background-color: #285392;
+  mix-blend-mode: screen;
+}
+
+.box-image:hover a::before {
+  background-color: transparent;
+}
+
+a img {
+  width: 100.5%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+}
+
+.box-image:hover img  {
+  filter: grayscale(0) contrast(1) brightness(1);
+}
+
+.box .box-info {
+  position: absolute;
+  /* display: none; */
+  right: 0;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  /* pointer-events: none; */
+}
+
+.box-info .box-title{
+  margin-bottom: 12px;
+}
+
+.box-title h4 {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: var(--mute-color);
+  font-size: .9rem;
+  margin-bottom: 6px;
+}
+
+.box-title h2 {
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 500;
+}
+
+.box-info .box-content {
+  background-color: #112240;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  z-index: 2;
+}
+
+.box-content p {
+  padding: 12px;
+  font-weight: 300;
+  color: #cad5f3;
+  font-family: "Nunito", sans-serif;
+}
+
+.box-info .box-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-details .tools {
+  display: flex;
+}
+
+.tools span {
+  margin-left: 18px;
+  font-size: .9rem;
+  color: #cad5f3;
+  font-family: "Nunito", sans-serif;
+}
+
+.box-details .icon {
+  margin-top: 12px;
+}
+
+.icon a {
+  color: #000000;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
