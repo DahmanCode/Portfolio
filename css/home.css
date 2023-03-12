@@ -328,7 +328,7 @@ ul li a:hover::before {
   line-height: 88px;
 }
 
-.sub-heading h1 {
+.sub-heading h5 {
   font-size: 20px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   color: var(--mute-color);
@@ -725,6 +725,11 @@ ul li a:hover::before {
     margin-left: 2rem;
     margin-bottom: 40px;
     line-height: 45px;
+  }
+  
+  .sub-heading h5 {
+    font-size: 14px;
+    top: 0px;
   }
 
   .home .sub-heading h2 {

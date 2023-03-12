@@ -213,7 +213,11 @@
 @media (max-width: 768px) {
 
   .projects .container-boxes {
-    margin: 5rem;
+    margin: 5rem 2rem;
+  }
+
+  .container-boxes h1 {
+    font-size: 1.8rem;
   }
 
   .box .box-image {
