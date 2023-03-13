@@ -32,9 +32,9 @@
 }
 
 .about-content p {
-  font-size: 1.3rem;
-  font-family: "Roboto Slab", sans-serif;
-  color: #8892b0;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #7e93d4;
   line-height: 1.8;
   letter-spacing: 1.5px;
   padding-bottom: 1.5rem;
@@ -48,9 +48,9 @@
 
 .about-content ul li {
   /* font-family: 'Aboreto', cursive; */
-  font-family: 'Montserrat', sans-serif;
-  color: #7e93d4;
-  font-size: 1.1rem;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #8892b0;
+  font-size: .9rem;
   font-weight: 200;
   position: relative;
   padding: 4px 0;
