@@ -23,6 +23,7 @@
   font-family: 'Aboreto', cursive;
   color: #dfe5fa;
   overflow: hidden;
+  z-index: 2;
 }
 
 .container-boxes h1::after {
