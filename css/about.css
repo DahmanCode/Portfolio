@@ -17,11 +17,11 @@
 
 .about .shape5 {
   position: absolute;
-  top: 30px;
-  right: 0;
+  top: -10px;
+  right: 20px;
   width: 200px;
   z-index: 1;
-  transform: rotate(-45deg);
+  transform: rotate(90deg);
 }
 
 .about .shape1 {
