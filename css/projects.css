@@ -15,6 +15,7 @@
   max-width: 950px;
 }
 
+
 .container-boxes h1 {
   position: relative;
   text-align: start;
@@ -49,6 +50,36 @@
   margin: 4rem 0;
 }
 
+.projects .shape6 {
+  position: absolute;
+  bottom: -30px;
+  right: 50%;
+  width: 200px;
+  z-index: 1;
+}
+
+.projects .shape8 {
+  position: absolute;
+  width: 200px;
+  bottom: 60px;
+  right: -120px;
+}
+
+@media (max-width: 700px) {
+
+  .projects .shape6 {
+    bottom: -100px;
+    width: 140px;
+  }
+
+  .projects .shape8 {
+    bottom: -70px;
+    right: -50px;
+    width: 140px;
+  }
+
+}
+
 .box:nth-of-type(2n+1) {
   justify-content: end;
 }
@@ -62,9 +93,10 @@
   z-index: 1;
   cursor: pointer;
   transition: all .3s;
-  box-shadow: 0 6px 20px #dee4f360;
+  box-shadow: 0 2px 20px #d2e0ff60;
 }
 
+.box:hover .box-image,
 .box .box-image:hover {
   box-shadow: 0 6px 20px #36466d60;
 }
