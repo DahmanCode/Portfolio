@@ -17,9 +17,9 @@
 
 .about .shape5 {
   position: absolute;
-  top: -10px;
+  top: -30px;
   right: 20px;
-  width: 200px;
+  width: 160px;
   z-index: 1;
   transform: rotate(90deg);
 }
@@ -34,9 +34,9 @@
 
 @media (max-width: 700px) {
   .about .shape5 {
-    /* top: 30px; */
+    top: -20px;
     right: -30px;
-    width: 130px;
+    width: 120px;
   }
 
   .about .shape1 {
