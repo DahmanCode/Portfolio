@@ -165,10 +165,12 @@
 }
 
 .box-title h2 {
+  position: relative;
   font-size: 1.8rem;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-weight: 500;
+  z-index: 1;
 }
 
 .box-info .box-content {
