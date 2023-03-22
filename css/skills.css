@@ -4,11 +4,9 @@
   width: 100vw;
   background: #00A1B625;
   display: flex;
-  /* gap: 10rem; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* padding-top: 4rem; */
 }
 
 .skills .image {
