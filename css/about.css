@@ -22,6 +22,7 @@
   width: 160px;
   z-index: 1;
   transform: rotate(90deg);
+  display: none;
 }
 
 .about .shape1 {
