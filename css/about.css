@@ -7,7 +7,6 @@
   position: relative;
   height: 100vh;
   width: 100vw;
-  /* background-color: #00385e; */
   background: url(/image/download.png) #052979;  display: flex;
   /* gap: 10rem; */
   align-items: center;
