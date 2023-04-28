@@ -39,8 +39,6 @@
 }
 
 .container-boxes .box {
-  /* max-width: 900px; */
-  /* max-width: 1000px; */
   height: 400px;
   position: relative;
   display: flex;
