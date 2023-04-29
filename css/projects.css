@@ -184,6 +184,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+.box-content p a {
+  color: var(--mute-color);
+}
+
 .box-info .box-details {
   display: flex;
   flex-direction: column;
