@@ -91,12 +91,12 @@
   z-index: 1;
   cursor: pointer;
   transition: all .3s;
-  box-shadow: 0 2px 20px #d2e0ff60;
+  box-shadow: 0 2px 20px #00000010;
 }
 
 .box:hover .box-image,
 .box .box-image:hover {
-  box-shadow: 0 6px 20px #36466d60;
+  filter: drop-shadow(0 6px 20px #36466d60);
 }
 
 .box-image a {
@@ -200,6 +200,18 @@
   font-size: .9rem;
   color: #cad5f3;
   font-family: "Nunito", sans-serif;
+}
+
+.tools span:nth-last-of-type(1) {
+  margin-left: 8px;
+}
+
+.tools small {
+  display: flex;
+  align-items: center;
+  font-size: .75rem;
+  color: #081546;
+  font-family: "Montserrat", sans-serif;
 }
 
 .box:nth-of-type(2n+1) .tools span {
