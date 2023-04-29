@@ -72,7 +72,7 @@
 
   .projects .shape8 {
     bottom: -70px;
-    right: -30px;
+    right: 0px;
     width: 140px;
   }
 
@@ -195,6 +195,7 @@
 
 .box-details .tools {
   display: flex;
+  flex-wrap: wrap;
   z-index: 2;
 }
 
