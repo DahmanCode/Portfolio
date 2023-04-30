@@ -131,6 +131,7 @@
   color: #a6b2d4;
   width: 100%;
   overflow: hidden;
+  font-size: 1rem;
   font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
@@ -139,4 +140,39 @@
   right: 0;
   top: 0;
   width: 280px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 80px;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: .9rem;
+  }
+
+  .contact .btn {
+    padding: 12px 28px;
+    word-spacing: 1px;
+    font-size: .9rem;
+  }
+
+  .contact .btn::before {
+    inset: 1px;
+  }
+
+  .footer {
+    font-size: .9rem;
+  }
+  
+.footer img {
+  top: 60px;
+  left: 0;
+  width: 200px;
+  z-index: 1;
+}
 }
