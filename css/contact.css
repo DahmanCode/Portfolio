@@ -8,6 +8,20 @@
   flex-direction: column;
 }
 
+#contact .right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 350px;
+  opacity: .4;
+}
+
+#contact .laptop {
+  position: absolute;
+  left: 20%;
+  top: -20%;
+  width: 300px;
+}
 .contact {
   position: relative;
   max-width: 600px;
@@ -127,29 +141,22 @@
   flex-direction: column;
   height: auto;
   min-height: 70px;
+  background-color: #0a192f;
+  width: auto;
+  /* overflow: hidden; */
+}
+
+.footer h1 {
   padding: 15px;
   text-align: center;
-  background-color: #0a192f;
   color: #a6b2d4;
-  width: 100%;
-  /* overflow: hidden; */
   font-size: 1rem;
   font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  font-weight: 500;
 }
 
-#contact .right {
-  position: absolute;
-  right: 0;
-  top: 45%;
-  width: 350px;
-  opacity: .4;
-}
-
-#contact .laptop {
-  position: absolute;
-  left: 20%;
-  top: -20%;
-  width: 300px;
+.footer h1 span {
+  color: #dfe5fa;
 }
 
 @media screen and (max-width: 768px) {

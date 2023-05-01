@@ -42,6 +42,11 @@ body {
   background: #7184a8;
 }
 
+::selection {
+  background-color: #adcaf7;
+  color: #0a192f;
+}
+
 header {
   position: relative;
   height: 100vh;
