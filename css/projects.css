@@ -3,11 +3,9 @@
   width: 100vw;
   background: url(/image/download.png) #597894;
   display: flex;
-  /* gap: 10rem; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* padding-top: 4rem; */
 }
 
 .projects .container-boxes {
