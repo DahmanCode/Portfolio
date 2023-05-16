@@ -293,10 +293,7 @@
   }
 
   .box-image a img {
-    width: 100.5%;
     height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%) contrast(1) brightness(30%);
   }
 
   .box:nth-of-type(2n) .box-info {
