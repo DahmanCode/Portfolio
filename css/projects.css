@@ -118,14 +118,20 @@
   background-color: transparent;
 }
 
-.box-image a img {
+.box-image a img,
+.box-image a video {
   width: 100.5%;
   height: auto;
   object-fit: cover;
   filter: grayscale(100%) contrast(1) brightness(50%);
 }
 
-.box-image:hover img  {
+.box-image a video {
+  height: 100%;
+}
+
+.box-image:hover img,
+.box-image:hover video {
   filter: grayscale(0) contrast(1) brightness(1);
 }
 
