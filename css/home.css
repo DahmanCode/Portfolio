@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
 
 :root {
   --first-color: #2bfd86;
@@ -315,19 +316,23 @@ ul li a:hover::before {
 }
 
 .home .heading {
+  /* text-align: center; */
   position: absolute;
   display: inline-block;
   top: 1rem;
   left: 8rem;
   width: 120rem;
-  z-index: 1;
+  /* z-index: 1; */
+  cursor: ew-resize;
+  transition: all 1s;
 }
 
-.home .heading h1, 
-.home .heading h1 span{
+.home .heading, 
+.home .heading span{
   /* margin-top: 30px; */
   font-size: 10rem;
   font-weight: 800;
+  font-family: 'IM Fell French Canon', serif;
   color: #8b8b8b;
   /* line-height: 130px; */
   text-transform: capitalize;
@@ -335,18 +340,18 @@ ul li a:hover::before {
   opacity: .28;
 }
 
-.heading h1 span {
+.heading span {
   color: #7b7b7b;
 }
 
 .home .sub-heading {
   width: 60%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  z-index: 2;
+  /* z-index: 2; */
   /* margin-bottom: 10%; */
   line-height: 88px;
 }
@@ -696,8 +701,8 @@ ul li a:hover::before {
     left: 5%;
   }
   
-  .home .heading h1, 
-  .home .heading h1 span{
+  .home .heading, 
+  .home .heading span{
     font-size: 5rem;
   }
 
@@ -739,8 +744,8 @@ ul li a:hover::before {
     left: 1%;
   }
 
-  .home .heading h1, 
-  .home .heading h1 span{
+  .home .heading, 
+  .home .heading span{
     font-size: 3rem;
   }
 

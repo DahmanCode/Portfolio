@@ -14,6 +14,25 @@ navLinks.forEach(link => {
 
 console.log(navLinks)
 
+
+// ===== Moving Text Animation ===== // 
+
+let movement = document.querySelector('.heading')
+var x = window.matchMedia("(max-width: 700px)")
+
+window.addEventListener('mousemove', (e) => {
+
+  if (e.pageX <= window.innerWidth ) {
+    if (x.matches) {
+      movement.style.left = (window.innerWidth / 6) - e.pageX + 'px'
+    } else {
+      movement.style.left = (window.innerWidth / 2) - e.pageX + 'px'
+    }
+  }
+})
+
+
+
 // ===== Unclickable Button ===== //
 
 // const buttonHeight = 50
@@ -30,3 +49,4 @@ console.log(navLinks)
 //     button.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px'
 //   })
 // })
+
