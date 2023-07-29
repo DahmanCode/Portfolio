@@ -23,6 +23,7 @@ body {
   place-items: center;
   min-height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
