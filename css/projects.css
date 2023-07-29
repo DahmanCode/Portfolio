@@ -46,19 +46,26 @@
   margin: 4rem 0;
 }
 
-.projects .shape6 {
+.projects .shape {
   position: absolute;
+  width: 200px;
+}
+
+.projects .shape6 {
   bottom: -30px;
   right: 50%;
-  width: 200px;
   z-index: 1;
 }
 
+.projects .shape4 {
+  bottom: 40px;
+  left: 190px;
+}
+
 .projects .shape8 {
-  position: absolute;
-  width: 200px;
   bottom: 60px;
   right: -120px;
+  opacity: .6;
 }
 
 @media (max-width: 700px) {
