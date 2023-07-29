@@ -69,10 +69,15 @@
 }
 
 @media (max-width: 700px) {
-
+  
   .projects .shape6 {
     bottom: -100px;
     width: 140px;
+  }
+  
+  .projects .shape4 {
+    bottom: -60px;
+    left: 100px;
   }
 
   .projects .shape8 {
